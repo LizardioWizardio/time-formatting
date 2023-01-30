@@ -3,7 +3,7 @@ import Video from "./Video";
 
 const VideoList = (props) => {
     return (
-        props.list.map(item => <Video url={item.url} date={item.date} />)
+        props.list.map(item => <Video url={item.url} date={item.date} key={item.date + Math.random().toFixed(2)}/>)
     );
 };
 
